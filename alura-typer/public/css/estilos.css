@@ -1,0 +1,79 @@
+.frase {
+    font-size: 20px;
+    text-align: left;
+}
+
+.campo-digitacao {
+    font-size: 20px;
+    height: 150px;
+    border: 3px solid;
+}
+
+.texto-correto {
+    border-color: forestgreen;
+}
+
+.texto-errado {
+    border-color: red;
+}
+
+.campo-desativado {
+    background-color: lightgray;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+.placar {
+    display: none;
+}
+
+body {
+    overflow: scroll;
+}
+
+.erro {
+    background: red;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#erro {
+    display: none;
+}
+
+#spinner {
+    display: none;
+}
+
+#id-frase {
+    width: 100px;
+    margin-left: 10px;
+}
+
+#sincroniza-placar {
+    float: right;
+}
+
+.slider {
+    height: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: darkslategrey;
+}
+
+.select-usuarios {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 200px;
+}
+
+#usuarios {
+    display: block;
+    width: 200px;
+}

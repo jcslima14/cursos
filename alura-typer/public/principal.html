@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="./css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./css/libs/google-fonts.css">
+    <link rel="stylesheet" href="./slick/slick.css"/>
+    <link rel="stylesheet" href="./slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/libs/selectize.default.css">
+    <link rel="stylesheet" href="./css/libs/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+
+        <div class="slider">
+            <img src="./img/slide1.png" class="imagem-jogo">
+            <img src="./img/slide2.png" class="imagem-jogo">
+            <img src="./img/slide3.png" class="imagem-jogo">
+        </div>
+
+        <p class="frase center">Não tinha medo o tal João de Santo Cristo, era o que todos diziam quando ele se perdeu...</p>
+
+        <div class="center">
+            <img src="./img/spinner.gif" alt="spinner" id="spinner">
+            <p id="erro" class="erro">Ocorreu um erro. Por favor, tente novamente.</p>
+        </div>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase">30</span> palavras</li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-restante">3</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campo-digitacao" cols="30" rows="10"></textarea>
+
+        <div>
+            <a id="reiniciar-jogo" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
+            <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons">assignment</i>
+            </a>
+            <a id="botao-nova-frase" class="btn-floating btn-large waves-effect waves-light purple">
+                <i class="material-icons">shuffle</i>
+            </a>
+            <a id="botao-busca-frase" class="btn-floating btn-large waves-effect waves-light brown">
+                <i class="material-icons">search</i>
+            </a>
+            <input type="number" id="id-frase" min="0">
+            <div class="select-usuarios">
+                <select id="usuarios">
+                    <option value="Júlio">Júlio</option>
+                    <option value="Leila">Leila</option>
+                    <option value="Miguel">Miguel</option>
+                    <option value="Rosângela">Rosângela</option>
+                </select>
+            </div>
+            <a id="sincroniza-placar" class="btn-floating btn-large waves-effect waves-light yellow tooltip" title="Sincronizado com sucesso!">
+                <i class="material-icons black-text">sync</i>
+            </a>
+        </div>
+
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de Palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./slick/slick.min.js"></script>
+
+    <script src="./js/placar.js"></script>
+    <script src="./js/frase.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/selectize.js"></script>
+    <script src="./js/tooltipster.bundle.min.js"></script>
+</body>
+</html>
